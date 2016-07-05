@@ -1,0 +1,23 @@
+{
+  "name": "angular-legacy-sortablejs",
+  "version": "0.4.0",
+  "description": "Angular (legacy) directive for SortableJS.",
+  "main": "angular-legacy-sortable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SortableJS/angular-legacy-sortablejs.git"
+  },
+  "keywords": [
+    "angular",
+    "sortable"
+  ],
+  "author": "RubaXa <trash@rubaxa>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SortableJS/angular-legacy-sortablejs/issues"
+  },
+  "homepage": "https://github.com/SortableJS/angular-legacy-sortablejs#readme"
+}
