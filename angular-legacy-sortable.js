@@ -31,7 +31,7 @@
 	var expando = 'Sortable:ng-sortable';
 
 	angular.module('ng-sortable', [])
-		.constant('ngSortableVersion', '0.4.0')
+		.constant('ngSortableVersion', '0.4.1')
 		.constant('ngSortableConfig', {})
 		.directive('ngSortable', ['$parse', 'ngSortableConfig', function ($parse, ngSortableConfig) {
 			var removed,
