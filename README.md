@@ -1,40 +1,67 @@
-# THIS PROJECT NEEDS A MAINTAINER.
-
 angular-legacy-sortable
 -----------------------
 
-Demo: http://jsbin.com/naduvo/1/edit?html,js,output
+Angular 1 module that integrates with Sortable.js
 
-```html
-<div ng-app="myApp" ng-controller="demo">
-	<ul ng-sortable>
-		<li ng-repeat="item in items">{{item}}</li>
-	</ul>
+# Installation
 
-	<ul ng-sortable="{ group: 'foobar' }">
-		<li ng-repeat="item in foo">{{item}}</li>
-	</ul>
+## Install with NPM
+		npm install angular-legacy-sortablejs
 
-	<ul ng-sortable="barConfig">
-		<li ng-repeat="item in bar">{{item}}</li>
-	</ul>
-</div>
+# Examples
+
+## Simple Drag and Drop
+```
+angular.module('exampleApp', [])
+.component('dragAndDropExample', {
+	template: `<ul ng-sortable>
+		<li ng-repeat="item in ['burgers', 'chips', 'hotdog']">
+			{$ item $}
+		</li>
+	</ul>`,
+})
 ```
 
-
-```js
-angular.module('myApp', ['ng-sortable'])
-	.controller('demo', ['$scope', function ($scope) {
-		$scope.items = ['item 1', 'item 2'];
-		$scope.foo = ['foo 1', '..'];
-		$scope.bar = ['bar 1', '..'];
-		$scope.barConfig = {
-			group: 'foobar',
-			animation: 150,
-			onSort: function (/** ngSortEvent */evt){
-				// @see angular-legacy-sortable.js#L18-L24
-			}
+## Specifying a Config
+You can pass a Config obj to `ng-sortable` and it will pass this onto the created sortable object. The available options can be found [here](https://github.com/RubaXa/Sortable#options)
+```
+angular.module('exampleApp', [])
+.component('dragAndDropExample', {
+	template: `<ul ng-sortable=$ctrl.sortableConf>
+		<li ng-repeat="item in ['burgers', 'chips', 'hotdog']">
+			{$ item $}
+		</li>
+	</ul>`,
+	controller: function AppSidebarController() {
+  	var ctrl = this;
+		ctrl.sortableConf = {
+				animation: 350,
+				chosenClass: 'sortable-chosen',
+				forceFallback: true,
 		};
-	}]);
+	},
+})
 ```
 
+# Drag handle
+Example showing how use the handle option
+```
+angular.module('exampleApp', [])
+.component('dragAndDropExample', {
+	template: `<ul ng-sortable=$ctrl.sortableConf>
+		<li ng-repeat="item in ['burgers', 'chips', 'hotdog']" draggable="false">
+			<span class="grab-handle">Drag Header</span>
+			<div>{$ item $}</div>
+		</li>
+	</ul>`,
+	controller: function AppSidebarController() {
+  	var ctrl = this;
+		ctrl.sortableConf = {
+				animation: 350,
+				chosenClass: 'sortable-chosen',
+				handle: '.grab-handle',
+				forceFallback: true,
+		};
+	},
+})
+```
