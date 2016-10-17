@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/SortableJS/angular-legacy-sortablejs/issues"
   },
-  "homepage": "https://github.com/SortableJS/angular-legacy-sortablejs#readme"
+  "homepage": "https://github.com/SortableJS/angular-legacy-sortablejs#readme",
+	"peerDependencies": {
+   	"sortablejs": "~1.4.0" 
+  }
 }
