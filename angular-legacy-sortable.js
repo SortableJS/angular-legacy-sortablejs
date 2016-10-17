@@ -6,11 +6,11 @@
 	'use strict';
 
 	if (typeof define === 'function' && define.amd) {
-		define(['angular', './Sortable'], factory);
+		define(['angular', 'sortablejs'], factory);
 	}
 	else if (typeof require === 'function' && typeof exports === 'object' && typeof module === 'object') {
 		require('angular');
-		factory(angular, require('./Sortable'));
+		factory(angular, require('sortablejs'));
 		module.exports = 'ng-sortable';
 	}
 	else if (window.angular && window.Sortable) {
