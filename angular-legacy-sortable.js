@@ -38,7 +38,7 @@
 				nextSibling;
 
 			function getNgRepeatExpression(node) {
-				return node.getAttribute('ng-repeat') || node.getAttribute('data-ng-repeat') || node.getAttribute('x-ng-repeat');
+				return node.getAttribute('ng-repeat') || node.getAttribute('data-ng-repeat') || node.getAttribute('x-ng-repeat') || node.getAttribute('dir-paginate');
 			}
 
 			// Export
