@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/SortableJS/angular-legacy-sortablejs#readme",
   "peerDependencies": {
-    "sortablejs": "~1.4.0" 
+    "sortablejs": "~1.5.x" 
   }
 }
