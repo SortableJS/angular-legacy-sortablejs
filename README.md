@@ -6,8 +6,10 @@ Angular 1 module that integrates with Sortable.js
 # Installation
 
 ## Install with NPM
-		
-	npm install angular-legacy-sortablejs
+
+	npm install angular-legacy-sortablejs-maintained
+
+Don't install the old angular-legacy-sortablejs package as thats not maintained
 
 
 # Examples

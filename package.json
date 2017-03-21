@@ -1,6 +1,6 @@
 {
-  "name": "angular-legacy-sortablejs",
-  "version": "0.4.1",
+  "name": "angular-legacy-sortablejs-maintained",
+  "version": "0.5.0",
   "description": "Angular (legacy) directive for SortableJS.",
   "main": "angular-legacy-sortable.js",
   "scripts": {
@@ -14,13 +14,13 @@
     "angular",
     "sortable"
   ],
-  "author": "RubaXa <trash@rubaxa>",
+  "author": "samjacobclift <samjacobclift@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SortableJS/angular-legacy-sortablejs/issues"
   },
   "homepage": "https://github.com/SortableJS/angular-legacy-sortablejs#readme",
   "peerDependencies": {
-    "sortablejs": "~1.5.x" 
+    "sortablejs": "~1.5.x"
   }
 }
