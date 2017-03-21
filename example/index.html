@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="exampleApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="//rubaxa.github.io/Sortable/Sortable.js"></script>
+    <script src="./angular-legacy-sortable.js"></script>
+
+    <script>
+      angular.module('exampleApp', ['ng-sortable'])
+        .component('dragAndDropExample', {
+            template: `<ul ng-sortable>
+                    <li ng-repeat="item in ['burgers', 'chips', 'hotdog']">
+                        {{ item }}
+                    </li>
+                </ul>`,
+          })
+    </script>
+
+  </head>
+  <body >
+    <drag-and-drop-example></drag-and-drop-example>
+  </body>
+</html>

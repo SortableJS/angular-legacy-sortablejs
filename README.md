@@ -17,7 +17,7 @@ Don't install the old angular-legacy-sortablejs package as thats not maintained
 ## Simple Drag and Drop
 
 ```js
-angular.module('exampleApp', [])
+angular.module('exampleApp', ['ng-sortable'])
 	.component('dragAndDropExample', {
 		template: `<ul ng-sortable>
 				<li ng-repeat="item in ['burgers', 'chips', 'hotdog']">
@@ -31,7 +31,7 @@ angular.module('exampleApp', [])
 You can pass a Config obj to `ng-sortable` and it will pass this onto the created sortable object. The available options can be found [here](https://github.com/RubaXa/Sortable#options)
 
 ```js
-angular.module('exampleApp', [])
+angular.module('exampleApp', ['ng-sortable'])
 	.component('dragAndDropExample', {
 		template: `<ul ng-sortable=$ctrl.sortableConf>
 				<li ng-repeat="item in ['burgers', 'chips', 'hotdog']">
@@ -53,7 +53,7 @@ angular.module('exampleApp', [])
 Example showing how use the handle option
 
 ```js
-angular.module('exampleApp', [])
+angular.module('exampleApp', ['ng-sortable'])
 	.component('dragAndDropExample', {
 		template: `<ul ng-sortable=$ctrl.sortableConf>
 				<li ng-repeat="item in ['burgers', 'chips', 'hotdog']" draggable="false">
