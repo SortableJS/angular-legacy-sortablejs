@@ -11,7 +11,6 @@ Angular 1 module that integrates with Sortable.js
 
 Don't install the old angular-legacy-sortablejs package as thats not maintained
 
-
 # Examples
 
 ## Simple Drag and Drop
@@ -38,7 +37,7 @@ angular.module('exampleApp', ['ng-sortable'])
 					{$ item $}
 				</li>
 			</ul>`,
-		controller: function AppSidebarController() {
+		controller: function ComponentController() {
 			var ctrl = this;
 			ctrl.sortableConf = {
 				animation: 350,
@@ -61,8 +60,8 @@ angular.module('exampleApp', ['ng-sortable'])
 					<div>{$ item $}</div>
 				</li>
 			</ul>`,
-		controller: function AppSidebarController() {
-  			var ctrl = this;
+		controller: function ComponentController() {
+  		var ctrl = this;
 			ctrl.sortableConf = {
 				animation: 350,
 				chosenClass: 'sortable-chosen',
