@@ -4,7 +4,7 @@
   "description": "Angular (legacy) directive for SortableJS.",
   "main": "angular-legacy-sortable.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/protractor conf.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,10 @@
   "homepage": "https://github.com/SortableJS/angular-legacy-sortablejs#readme",
   "peerDependencies": {
     "sortablejs": "~1.5.x"
+  },
+  "devDependencies": {
+    "angular": "^1.6.3",
+    "phantomjs": "^2.1.7",
+    "protractor": "^5.1.1"
   }
 }
