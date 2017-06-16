@@ -24,16 +24,13 @@
     "url": "https://github.com/SortableJS/angular-legacy-sortablejs/issues"
   },
   "homepage": "https://github.com/SortableJS/angular-legacy-sortablejs#readme",
-  "peerDependencies": {
-    "sortablejs": "~1.5.x"
-  },
   "devDependencies": {
+    "express": "^4.15.3",
+    "express-static": "^1.1.0",
     "eslint": "4.0.0-alpha.0",
     "protractor": "^5.1.2"
   },
   "dependencies": {
-    "express": "^4.15.3",
-    "express-static": "^1.1.0",
-    "sortablejs": "^1.6.0"
+    "sortablejs": "~1.5.x"
   }
 }
