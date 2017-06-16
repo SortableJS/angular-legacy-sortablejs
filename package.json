@@ -4,7 +4,11 @@
   "description": "Angular (legacy) directive for SortableJS.",
   "main": "angular-legacy-sortable.js",
   "scripts": {
-    "test": "./node_modules/.bin/protractor conf.js"
+    "serve:example": "node example/app.js",
+    "webdriver": "npm run webdriver:setup && npm run webdriver:start",
+    "webdriver:setup": "./node_modules/.bin/webdriver-manager update",
+    "webdriver:start": "./node_modules/.bin/webdriver-manager start",
+    "test:e2e": "./node_modules/.bin/protractor e2e/conf.js"
   },
   "repository": {
     "type": "git",
@@ -24,8 +28,12 @@
     "sortablejs": "~1.5.x"
   },
   "devDependencies": {
-    "angular": "^1.6.3",
-    "phantomjs": "^2.1.7",
-    "protractor": "^5.1.1"
+    "eslint": "4.0.0-alpha.0",
+    "protractor": "^5.1.2"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-static": "^1.1.0",
+    "sortablejs": "^1.6.0"
   }
 }

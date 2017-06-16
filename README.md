@@ -72,3 +72,19 @@ angular.module('exampleApp', ['ng-sortable'])
 		},
 	});
 ```
+
+
+# Running e2e Tests
+To run the e2e tests run each of these commands in a seperate tab
+
+```bash
+npm run serve:example
+```
+
+```bash
+npm run webdriver
+```
+
+```bash
+npm run test:e2e
+```
