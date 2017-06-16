@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * @author RubaXa <trash@rubaxa.org>
  * @licence MIT
