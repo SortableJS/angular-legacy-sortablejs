@@ -58,15 +58,15 @@ Example showing how use the handle option
 angular.module('exampleApp', ['ng-sortable'])
   .component('dragAndDropExample', {
     template: `
-		<ul ng-sortable=$ctrl.sortableConf>
+    <ul ng-sortable=$ctrl.sortableConf>
       <li ng-repeat="item in ['burgers', 'chips', 'hotdog']" draggable="false">
         <span class="grab-handle">Drag Header</span>
         <div>{$ item $}</div>
       </li>
    </ul>`,
    controller: class ExampleController {
-			constructor() {
-				this.sortableConf = {
+      constructor() {
+        this.sortableConf = {
           animation: 350,
           chosenClass: 'sortable-chosen',
           handle: '.grab-handle',
