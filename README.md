@@ -7,7 +7,11 @@ Angular 1 module that integrates with Sortable.js
 
 ## Install with NPM
 
-  npm install angular-legacy-sortablejs-maintained
+    npm install angular-legacy-sortablejs-maintained
+
+## Install with Yarn
+
+    yarn add angular-legacy-sortablejs-maintained
 
 Don't install the old angular-legacy-sortablejs package as thats not maintained
 
@@ -77,9 +81,21 @@ angular.module('exampleApp', ['ng-sortable'])
   });
 ```
 
+# Tests
+There are selenium based tests that can be used to check for regressions
 
-# Running e2e Tests
-To run the e2e tests run each of these commands in a seperate tab
+## Requirements
+  - node
+  - yarn
+
+## Setting up tests
+Navigate to the repo directory in a terminal and run
+
+    yarn
+
+## Running e2e tests
+
+To run the e2e tests run each of these commands in a separate terminal window
 
 ```bash
 npm run serve:example
