@@ -16,6 +16,7 @@ Angular 1 module that integrates with Sortable.js
 Don't install the old angular-legacy-sortablejs package as thats not maintained
 
 # Examples
+[Live Demo](https://example-angularjs-sortable.glitch.me/)
 
 ## Simple Drag and Drop
 
