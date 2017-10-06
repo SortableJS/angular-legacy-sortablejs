@@ -1,7 +1,7 @@
 {
-  "name": "angular-legacy-sortablejs-maintained",
-  "version": "0.5.2",
-  "description": "Angular (legacy) directive for SortableJS.",
+  "name": "wisboo-sortable",
+  "version": "0.1",
+  "description": "Customized library for Wisboo FrontEnd. Original libray Angular (legacy) directive for SortableJS.",
   "main": "angular-legacy-sortable.js",
   "scripts": {
     "serve:example": "node example/app.js",
@@ -12,18 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SortableJS/angular-legacy-sortablejs.git"
+    "url": "git+https://github.com/Wisboo/angular-legacy-sortablejs.git"
   },
   "keywords": [
     "angular",
     "sortable"
   ],
-  "author": "samjacobclift <samjacobclift@gmail.com>",
+  "author": "V. Maldonado <vmaldonado@wisboo.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SortableJS/angular-legacy-sortablejs/issues"
+    "url": "https://github.com/Wisboo/angular-legacy-sortablejs/issues"
   },
-  "homepage": "https://github.com/SortableJS/angular-legacy-sortablejs#readme",
+  "homepage": "https://github.com/Wisboo/angular-legacy-sortablejs#readme",
   "devDependencies": {
     "express": "^4.15.3",
     "express-static": "^1.1.0",
