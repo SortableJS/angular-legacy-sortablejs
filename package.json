@@ -1,6 +1,6 @@
 {
   "name": "wisboo-sortable",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "Customized library for Wisboo FrontEnd. Original libray Angular (legacy) directive for SortableJS.",
   "main": "angular-legacy-sortable.js",
   "scripts": {

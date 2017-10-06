@@ -178,7 +178,7 @@
             offDestroy = scope.$on('$destroy', _destroy);
 
           }
-        }
-      };
-    }]);
+        };
+      }
+    ]);
 });
