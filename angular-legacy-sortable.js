@@ -37,6 +37,8 @@
     .directive('wisbooSortable', [
       '$parse', 'wisbooSortableConfig',
       function ($parse, config) {
+        var removed,
+            nextSibling;
         return {
           restrict: 'A',
           scope: {
