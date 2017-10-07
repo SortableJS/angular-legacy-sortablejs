@@ -65,6 +65,7 @@
                 models: source,
                 oldIndex: evt.oldIndex,
                 newIndex: evt.newIndex,
+                moved: evt.from !== evt.to,
                 originalEvent: evt
               });
             }
@@ -81,22 +82,11 @@
                 newIndex = evt.newIndex;
 
               if (el !== evt.from) {
-                var prevItems = evt.from[expando]();
+                var prevItems = evt.from[expando];
 
                 removed = prevItems[oldIndex];
 
-                if (evt.clone) {
-                  removed = angular.copy(removed);
-                  prevItems.splice(Sortable.utils.index(evt.clone, sortable.options.draggable), 0, prevItems.splice(oldIndex, 1)[0]);
-
-                  if (evt.from.contains(evt.clone)) {
-                    evt.from.removeChild(evt.clone);
-                  }
-                }
-                else {
-                  prevItems.splice(oldIndex, 1);
-                }
-
+                prevItems.splice(oldIndex, 1);
                 items.splice(newIndex, 0, removed);
 
                 evt.from.insertBefore(evt.item, nextSibling); // revert element
