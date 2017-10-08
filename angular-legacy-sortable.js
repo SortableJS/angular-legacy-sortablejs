@@ -154,6 +154,11 @@
               }
             }));
 
+            // watch for collection
+            watchers.push(scope.$watch('collection', function (newCollection) {
+              el[expando] = scope.collection;
+            }));
+
             // Create watchers for `options`
             angular.forEach([
               'sort', 'disabled', 'draggable', 'handle', 'animation', 'group', 'ghostClass', 'filter',
