@@ -27,6 +27,8 @@
    * @property  {Object|Array}  models     List of items
    * @property  {number}        oldIndex   before sort
    * @property  {number}        newIndex   after sort
+   * @property  {number}        moved      element was moved from one list to another
+   * @property  {number}        received   element was moved to this list
    */
 
   var expando = 'Sortable:wisboo-sortable';
@@ -66,6 +68,7 @@
                 oldIndex: evt.oldIndex,
                 newIndex: evt.newIndex,
                 moved: evt.from !== evt.to,
+                received: evt.to === el,
                 originalEvent: evt
               });
             }
