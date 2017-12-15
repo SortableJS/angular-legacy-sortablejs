@@ -30,7 +30,7 @@
     "eslint": "4.0.0-alpha.0",
     "protractor": "^5.1.2"
   },
-  "dependencies": {
-    "sortablejs": "~1.5.x"
+  "peerDependencies": {
+    "sortablejs": "> 1.5.x"
   }
 }
