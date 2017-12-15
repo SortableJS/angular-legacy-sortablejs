@@ -31,6 +31,6 @@
     "protractor": "^5.1.2"
   },
   "peerDependencies": {
-    "sortablejs": "> 1.5.x"
+    "sortablejs": ">=1.5.x"
   }
 }
