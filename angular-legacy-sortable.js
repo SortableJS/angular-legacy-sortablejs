@@ -47,7 +47,7 @@
             wisbooSortable: '=?',
             collection: '=ngModel'
           },
-          link(scope, $el) {
+          link: function (scope, $el) {
             var el = $el[0],
               options = angular.extend(scope.wisbooSortable || {}, config),
               watchers = [],
