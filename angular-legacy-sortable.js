@@ -92,7 +92,8 @@
 								models: source,
 								oldIndex: evt.oldIndex,
 								newIndex: evt.newIndex,
-								originalEvent: evt
+								originalEvent: evt,
+								scope: scope.$parent
 							});
 						}
 
