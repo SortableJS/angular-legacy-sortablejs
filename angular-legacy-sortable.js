@@ -155,6 +155,7 @@
 							watchers = null;
 							sortable = null;
 							nextSibling = null;
+							removed = null;
 						}
 
 
@@ -171,6 +172,7 @@
 							onEnd: function (/**Event*/evt) {
 								_emitEvent(evt, removed);
 								scope.$apply();
+								removed = null;
 							},
 							onAdd: function (/**Event*/evt) {
 								_sync(evt);
