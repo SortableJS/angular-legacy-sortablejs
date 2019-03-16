@@ -137,8 +137,6 @@
 									evt.from.insertBefore(nextSibling, evt.item.nextSibling);
 								}
 							}
-
-							scope.$apply();
 						}
 
 						function _destroy() {
@@ -155,6 +153,7 @@
 							watchers = null;
 							sortable = null;
 							nextSibling = null;
+							removed = null;
 						}
 
 
@@ -171,11 +170,11 @@
 							onEnd: function (/**Event*/evt) {
 								_emitEvent(evt, removed);
 								scope.$apply();
+								removed = null;
 							},
 							onAdd: function (/**Event*/evt) {
 								_sync(evt);
 								_emitEvent(evt, removed);
-								scope.$apply();
 							},
 							onUpdate: function (/**Event*/evt) {
 								_sync(evt);
