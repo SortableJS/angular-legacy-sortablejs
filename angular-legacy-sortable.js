@@ -137,8 +137,6 @@
 									evt.from.insertBefore(nextSibling, evt.item.nextSibling);
 								}
 							}
-
-							scope.$apply();
 						}
 
 						function _destroy() {
@@ -175,7 +173,6 @@
 							onAdd: function (/**Event*/evt) {
 								_sync(evt);
 								_emitEvent(evt, removed);
-								scope.$apply();
 							},
 							onUpdate: function (/**Event*/evt) {
 								_sync(evt);
