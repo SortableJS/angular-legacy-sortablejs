@@ -25,6 +25,11 @@ angular.module('nestedApp', ['ng-sortable'])
       },
       {
         name: 'item2',
+        items: [
+          {
+            name: 'subitem2',
+          }
+        ]
       },
       {
         name: 'item3'
