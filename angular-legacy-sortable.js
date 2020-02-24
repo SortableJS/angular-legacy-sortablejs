@@ -20,6 +20,8 @@
 })(function (angular, Sortable) {
 	'use strict';
 
+	// Use default import if available
+	Sortable = Sortable.default || Sortable;
 
 	/**
 	 * @typedef   {Object}        ngSortEvent
