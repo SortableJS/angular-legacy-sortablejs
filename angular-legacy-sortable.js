@@ -20,6 +20,8 @@
 })(function (angular, Sortable) {
 	'use strict';
 
+	// Use default import if available
+	Sortable = Sortable.default || Sortable;
 
 	/**
 	 * @typedef   {Object}        ngSortEvent
@@ -92,7 +94,8 @@
 								models: source,
 								oldIndex: evt.oldIndex,
 								newIndex: evt.newIndex,
-								originalEvent: evt
+								originalEvent: evt,
+								scope: scope.$parent
 							});
 						}
 
