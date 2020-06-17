@@ -5,6 +5,8 @@
  */
 (function (factory) {
 	'use strict';
+	
+	Sortable = Sortable.default || Sortable;
 
 	if (typeof define === 'function' && define.amd) {
 		define(['angular', 'sortablejs'], factory);
