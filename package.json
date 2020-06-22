@@ -1,6 +1,6 @@
 {
   "name": "angular-legacy-sortablejs-maintained",
-  "version": "0.6.2",
+  "version": "1.0.0",
   "description": "Angular (legacy) directive for SortableJS.",
   "main": "angular-legacy-sortable.js",
   "scripts": {
